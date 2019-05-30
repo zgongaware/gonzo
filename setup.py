@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(name='goza',
-                 version='0.0.4',
+                 version='0.0.5',
                  author="Zach Gongaware",
                  description='You personal Python assistant',
                  packages=setuptools.find_packages(),

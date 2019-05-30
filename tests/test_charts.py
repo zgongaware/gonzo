@@ -1,6 +1,5 @@
 import random
-
-from goza import Chart, Scatter
+from .goza import Chart, Scatter
 
 
 def test_chart_spine():
