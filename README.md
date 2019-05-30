@@ -5,7 +5,7 @@ A personal Python assistant library
 This is a working directory for Goza, my personal assistant Python library.  Goza provides me with tools to accomplish common tasks in my preferred manner.
 
 ## Installation
-Gonzo is available on pip!
+Goza is available on pip!
 
 ```python
 pip install -U goza
