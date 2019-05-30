@@ -68,6 +68,7 @@ class Chart:
         """
         plt.show()
 
+    # TODO: save_figure method saving blank image.
     @staticmethod
     def save_figure(*args, **kwargs):
         """
