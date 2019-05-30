@@ -1,5 +1,5 @@
 import random
-from .goza import Chart, Scatter
+from goza import Chart, Scatter
 
 
 def test_chart_spine():
@@ -23,6 +23,6 @@ def test_scatter_data():
     x = random.sample(range(1, 100), 50)
     y = random.sample(range(1, 100), 50)
 
-    scatter = Scatter(x, y)
+    scatter = Scatter(x, y, title="Scatter Example")
 
     assert len(scatter.x) == len(scatter.y)
