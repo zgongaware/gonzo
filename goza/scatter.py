@@ -16,9 +16,6 @@ class Scatter(Chart):
         # Plot scatter plot
         self.plot_scatter()
 
-        # Show
-        self.show()
-
     def plot_scatter(self, color="black", size=2):
 
         self.ax.scatter(self.x, self.y, color=color, s=size)
