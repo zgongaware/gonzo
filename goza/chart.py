@@ -29,14 +29,14 @@ class Chart:
 
         return self.figure, self.ax
 
-    def format_title(self, color="#605770", fontsize=14):
+    def format_title(self, color="black", fontsize=14):
         """
         Format title, x label, and y label
         :return:
         """
         self.ax.set_title(self.title, color=color, fontsize=fontsize)
 
-    def format_axes(self, color="#605770"):
+    def format_axes(self, color="#605770", fontsize=12):
         """
         Format axes to my preference.  Remove top/right spines and set colors on
         left/bottom spines, ticks, and tick labels
@@ -57,8 +57,8 @@ class Chart:
         self.ax.tick_params(axis="y", colors=color)
 
         # Format labels
-        self.ax.set_xlabel(self.xlabel, color=color)
-        self.ax.set_ylabel(self.ylabel, color=color)
+        self.ax.set_xlabel(self.xlabel, fontsize=fontsize)
+        self.ax.set_ylabel(self.ylabel, fontsize=fontsize)
 
     @staticmethod
     def show():
