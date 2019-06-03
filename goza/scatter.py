@@ -3,7 +3,7 @@ from goza import Chart
 
 class Scatter(Chart):
     """
-
+    Plot scatter chart using x and y data points.
     """
     def __init__(self, x, y, title=None, xlabel=None, ylabel=None, figsize=None):
 
@@ -16,6 +16,6 @@ class Scatter(Chart):
         # Plot scatter plot
         self.plot_scatter()
 
-    def plot_scatter(self, color="black", size=3):
+    def plot_scatter(self, color="#d32323", size=3):
 
         self.ax.scatter(self.x, self.y, color=color, s=size)
