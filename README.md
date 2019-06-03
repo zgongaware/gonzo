@@ -11,7 +11,7 @@ Goza is available on PyPI!
 pip install -U goza
 ```
 ## Modules
-### Scatter
+### Scatter Plot
 `Scatter` creates a pre-formatted scatter plot.  Title, axis labels, and figure size may be passed as arguments.
 #### Usage
 ```python
@@ -25,3 +25,16 @@ scatter = Scatter(x, y,  title="Scatter Example")
 ```
 
 ![scatter](Scatter_Example.png "Scatter Example")
+
+### Bar Plot
+`Bar` creates a pre-formatted bar chart. Title, axis labels, figure size, and orientation may be passed as arguments.
+```python
+from goza import Bar
+
+x = ["A", "B", "C", "D"]
+y = [5, 4, 3, 2]
+
+bar = Bar(x, y, title="Bar Example")
+```
+
+![Bar](Bar_Example.png "Bar Example")
