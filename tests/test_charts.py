@@ -1,5 +1,6 @@
+import numpy as np
 import random
-from goza import Chart, Scatter, Bar
+from goza import Chart, Scatter, Bar, ECDF
 
 
 def test_chart_spine():
@@ -38,3 +39,10 @@ def test_bar_figsize():
     assert bar.figsize == (10, 8)
 
 
+def test_ecdf():
+
+    x = np.random.normal(size=1000)
+
+    ecdf = ECDF(x)
+
+    assert round(ecdf.y.mean(), 1) == 0.5

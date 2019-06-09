@@ -38,3 +38,18 @@ bar = Bar(x, y, title="Bar Example")
 ```
 
 ![Bar](Bar_Example.png "Bar Example")
+
+### ECDF Plot
+`ECDF` creates a pre-formatted Empirical Cumulative Distribution Function (ECDF).  A single array is accepted to generate the plot. Title, axis labels, and figure size are accepted as arguments.
+
+```python
+from goza import ECDF
+import numpy as np
+
+x = np.random.normal(size=100)
+
+ecdf = ECDF(x, title="ECDF Example")
+
+```
+
+![ECDF](ECDF_Example.png "ECDF Example")
